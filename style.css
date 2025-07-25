@@ -1,0 +1,1021 @@
+/* ================================
+   General & Reusable Styles
+   ================================ */
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: #fff;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* کلاس کانتینر مرکزی ما */
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+/* ================================
+   Header & Navigation Styles
+   ================================ */
+
+.main-header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+
+
+
+
+
+
+}
+
+/* حالا کانتینر ما فلکس باکس است */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #615956;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #726966;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #443f3d;
+}
+
+
+
+
+/* ================================
+   Button Styles
+   ================================ */
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: 2px solid #726966;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #726966;
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: #443f3d;
+    border-color: #443f3d;
+}
+
+.btn-outline {
+    background-color: #fff;
+    color: #1a1a1a;
+}
+.btn-outline:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+
+.parallax-bg {
+  
+    background-image: url('./assets/XLffEvg3LMHREFmdvjDIk-4096x4096.webp'); /* آدرس عکس اصلی Hero */
+
+
+    background-attachment: fixed;
+
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: #fff; 
+}
+
+/* یک لایه نیمه شفاف روی پس زمینه برای خوانایی بهتر متن */
+.parallax-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 26, 26, 0.5); /* رنگ مشکی با 50% شفافیت */
+    z-index: 1;
+}
+/* ================================
+   Hero Section Styles
+   ================================ */
+
+/* ================================
+   Hero Section Styles (با افکت پارالاکس)
+   ================================ */
+
+   /* ================================
+   Hero Section Styles (بدون پارالاکس)
+   ================================ */
+
+.hero-section {
+    padding: 80px 0;
+    background-color: #fff; /* پس زمینه سفید ساده */
+}
+
+.hero-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-text {
+    flex-basis: 50%;
+    text-align: right; /* چینش متن در حالت دسکتاپ */
+}
+
+.hero-text h1 {
+    font-family: 'Lalezar', sans-serif; /* یا هر فونتی که انتخاب کرده اید */
+    font-size: 64px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.3;
+    margin-bottom: 24px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+/* استایل دکمه به حالت اولیه برمیگردد */
+.hero-section .btn-outline {
+    border-color: #1a1a1a;
+    color: #1a1a1a;
+}
+
+.hero-section .btn-outline:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.hero-image {
+    flex-basis: 45%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ================================
+   About Section Styles
+/* ================================
+   About Section Styles
+   ================================ */
+
+   .about-section {
+    /* رنگ پس زمینه به این بخش اضافه شد */
+    background-color: #F8EFEC;
+    /* برای نمایش بهتر رنگ، فاصله عمودی را به padding تغییر دادیم */
+    padding: 100px 0;
+}
+
+.about-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+
+
+.about-image {
+    flex-basis: 45%;
+    order: 2; /* ترتیب عکس را در حالت LTR تغییر میدهد */
+}
+.about-image img {
+    max-width: 100%;
+}
+
+.about-text {
+    flex-basis: 55%;
+    order: 1;
+}
+
+.about-text h2 {
+    
+    font-size: 54px;
+    margin-bottom: 24px;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.about-features {
+    display: flex;
+    margin-top: 60px;
+    gap: 20px;
+}
+
+.feature-item {
+    color: #777;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 20px;
+    border-right: 1px solid #ddd;
+}
+
+.feature-item:first-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+/* ================================
+   Program Section Styles
+   ================================ */
+
+   .program-section {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.program-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.program-image {
+    flex-basis: 45%;
+}
+
+.program-image img {
+    max-width: 100%;
+    border-radius: 20px; /* گرد کردن گوشه های تصویر */
+}
+
+.program-text {
+    flex-basis: 55%;
+}
+
+.program-text h2 {
+    
+    font-size: 54px;
+    margin-bottom: 24px;
+}
+
+.program-text p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+/* لیست ویژگی های برنامه */
+.program-features {
+    list-style: none; /* حذف نقطه های پیش فرض لیست */
+    margin-top: 40px;
+    padding-right: 0; /* حذف فاصله داخلی راست */
+}
+
+.program-features li {
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 17px;
+    position: relative;
+    padding-right: 30px; /* ایجاد فضا برای آیکون */
+}
+
+/* اضافه کردن تیک سبز رنگ قبل از هر آیتم */
+.program-features li::before {
+    content: '✔';
+    color: #6A8B82; /* یک رنگ سبز ملایم */
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* ================================
+   Explore Section Styles
+   ================================ */
+
+   .explore-section {
+    padding: 120px 0;
+    background-color: #E3E3EF; /* پس زمینه سفید */
+}
+
+.explore-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.explore-text {
+    flex-basis: 45%;
+}
+
+.explore-text p {
+    font-size: 20px; /* فونت کمی بزرگتر چون تیتر نداریم */
+    color: #444;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.explore-image {
+    flex-basis: 50%;
+}
+
+.explore-image img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+/* ================================
+   Final CTA Section Styles
+   ================================ */
+
+   .final-cta-section {
+    background-color: #fff; /* پس زمینه جدید بنفش-خاکستری */
+    padding: 120px 0;
+}
+
+.final-cta-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.final-cta-text {
+    flex-basis: 50%;
+    order: 2;
+}
+
+.final-cta-text p {
+    font-size: 20px;
+    color: #333; /* رنگ تیره برای خوانایی روی پس زمینه روشن */
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.final-cta-image {
+    flex-basis: 45%;
+    order: 1;
+}
+
+.final-cta-image img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+/* ================================
+   Expert Section Styles
+   ================================ */
+
+   .expert-section {
+    background-color: #FBEFEA; /* همان پس زمینه بخش قبلی */
+    padding: 120px 0;
+}
+
+.expert-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.expert-text {
+    flex-basis: 50%;
+}
+
+.expert-text h2 {
+    
+
+    font-size: 54px;
+    margin-bottom: 24px;
+    line-height: 1.3;
+}
+
+.expert-text p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.expert-image {
+    flex-basis: 45%;
+}
+
+.expert-image img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+/* ================================
+   Footer Styles
+   ================================ */
+
+   .main-footer-section {
+    background-color: #FBEFEA;
+    padding: 80px 0;
+
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1; /* تقسیم مساوی فضا بین ستون ها */
+}
+
+.footer-column.footer-about {
+    flex: 1.5; /* کمی فضای بیشتر برای ستون اول */
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.7;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #7C6D68;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.footer-column ul li {
+    margin-bottom: 15px;
+    
+}
+
+.footer-column ul a {
+    text-decoration: none;
+    color: #7C6D68;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul a:hover {
+    color: #000;
+}
+
+/* ===================================================
+   Responsive Styles (for screens smaller than 768px) - UPDATED
+   =================================================== */
+
+   @media (max-width: 768px) {
+
+    /* --- General Styles --- */
+    body {
+        font-size: 15px;
+    }
+
+    /* --- Header --- */
+    .main-nav .nav-links {
+        display: none;
+    }
+
+    /* --- All Sections --- */
+    .hero-section,
+    .about-section,
+    .program-section,
+    .explore-section,
+    .final-cta-section,
+    .expert-section {
+        /* فاصله عمودی بخش ها در موبایل کمتر میشود */
+        padding: 60px 0;
+        margin: 0;
+    }
+
+    .hero-section .container,
+    .about-section .container,
+    .program-section .container,
+    .explore-section .container,
+    .final-cta-section .container,
+    .expert-section .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* ##########  تغییر اصلی اینجاست ########## */
+    .hero-text,
+    .about-text,
+    .program-text,
+    .explore-text,
+    .final-cta-text,
+    .expert-text {
+        /* به جای وسط چین، متن ها راست چین میشوند */
+        text-align: right;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .about-text h2,
+    .program-text h2,
+    .expert-text h2 {
+        font-size: 38px;
+    }
+
+    /* تمام ستون های متن و تصویر باید 100% عرض را بگیرند */
+    .hero-text, .hero-image,
+    .about-text, .about-image,
+    .program-text, .program-image,
+    .explore-text, .explore-image,
+    .final-cta-text, .final-cta-image,
+    .expert-text, .expert-image {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    /* ترتیب نمایش عکس و متن در موبایل */
+    /* تصویر بالای متن قرار میگیرد */
+    .about-image,
+    .program-image,
+    .expert-image {
+        order: -1; /* با این کد، آیتم به اول منتقل میشود */
+    }
+
+    .hero-text{
+        order: 1;
+    }
+
+    /* --- Footer --- */
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+        /* چینش فوتر هم به راست تغییر کرد */
+        text-align: right;
+    }
+
+    .about-features {
+        justify-content: flex-start; /* آیتم ها از راست شروع میشوند */
+    }
+
+    .feature-item {
+        border-right: none;
+        padding-right: 0;
+    }
+
+/* جایگزین کن */
+main .btn { /* استایل تمام عرض فقط برای دکمه های داخل تگ main */
+    width: 100%;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+   
+
+    .about-features {
+        flex-direction: column; /* آیتم ها را زیر هم میچیند */
+        align-items: flex-start; /* آیتم ها را در راستای راست چین میکند */
+        gap: 15px;
+    }
+
+    .feature-item {
+        border-right: none; /* خط جداکننده را حذف میکند */
+        padding-right: 0;
+    }
+
+    .about-text {
+        order: 2; /* متن اول نمایش داده شود */
+    }
+    .about-image {
+        order: 1; /* تصویر دوم نمایش داده شود */
+    }
+
+    .about-features {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .feature-item {
+        border-right: none;
+        padding-right: 0;
+    }
+
+
+    .program-text {
+        /* این بخش را به یک کانتینر فلکس عمودی تبدیل میکنیم */
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ترتیب پیش فرض برای تیتر و پاراگراف 0 است، پس اول نمایش داده میشوند */
+
+    .program-text .program-features {
+        order: 1; /* لیست ویژگی ها بعد از تیتر و پاراگراف می آید */
+        margin-top: 0; /* فاصله بالای پیش فرض را برمیداریم */
+        margin-bottom: 25px; /* یک فاصله جدید زیر لیست ایجاد میکنیم */
+    }
+
+    .program-text .btn {
+        order: 2; /* دکمه در آخر نمایش داده میشود */
+    }
+
+    .explore-text{
+        order: 2;
+    }
+
+    
+
+    .footer-content{
+        flex-wrap: nowrap;
+    }
+
+    /* این کد جدید را اضافه کن */
+.main-header .btn {
+    /* اندازه دکمه هدر را در موبایل کوچکتر میکنیم */
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+.main-header .container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main-header{
+    margin-left: 5rem;
+}
+
+
+main {
+    margin-top: -5rem;
+}
+
+
+
+
+}
+
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+
+
+  h1,
+  h2,
+  h3,
+  p {
+    background: linear-gradient(to right, #434343, #c6b7b1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+
+
+  /* ================================
+   Header & Navigation Styles
+   ================================ */
+
+/* فایل style.css */
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    
+    /* تغییر اصلی: پس زمینه اولیه شفاف است */
+    background-color: transparent;
+    
+    /* یک ترنزیشن نرم برای تغییرات اضافه میکنیم */
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* این کلاس جدید با جاوااسکریپت اضافه خواهد شد */
+.scrolled-header {
+    background-color: rgba(255, 255, 255, 0.073); /* پس زمینه سفید با 75% شفافیت */
+    backdrop-filter: blur(10px); /* افکت اصلی مات و شیشه ای */
+    -webkit-backdrop-filter: blur(10px); /* برای پشتیبانی در مرورگر سافاری */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+main {
+    /* این کد بسیار مهم است */
+    /* به اندازه ارتفاع هدر، به محتوای اصلی فاصله از بالا میدهیم */
+    padding-top: 85px;
+}
+
+/* بقیه کدهای هدر بدون تغییر باقی میمانند */
+/* .main-nav { ... } */
+
+/* این کد باید در بالاترین قسمت فایل style.css شما باشد */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* بقیه کدهای شما از اینجا به بعد شروع میشوند */
+/* body { ... } */
+
+.parallax-section {
+    background-image: url('./assets/your-image.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  html {
+    scroll-behavior:  smooth;
+  }
+
+  body, html {
+    overflow-x: hidden;
+}
+
+/* ================================
+   Mobile Navigation Panel
+   ================================ */
+
+  /* ================================
+   Mobile Navigation Panel (Floating Version)
+   ================================ */
+
+   #mobile-nav {
+    display: none; 
+    position: fixed;
+    z-index: 1010;
+
+    /* تغییرات اصلی برای شناور کردن پنل */
+    bottom: 25px;                 /* ۱. فاصله از پایین صفحه */
+    left: 50%;                    /* ۲. در مرکز افقی قرار میگیرد */
+    transform: translateX(-50%);  /* ۳. تکنیک دقیق وسط‌چین کردن */
+    width: 92%;                   /* ۴. عرض پنل کمی کمتر از عرض صفحه */
+    max-width: 380px;             /* یک عرض حداکثری برای نمایش بهتر */
+
+    /* استایل‌های ظاهری جدید */
+    background-color: rgba(255, 255, 255, 0.397); /* پس‌زمینه نیمه‌شفاف */
+    backdrop-filter: blur(6px);                 /* افکت شیشه‌ای و مات */
+    -webkit-backdrop-filter: blur(6px);
+
+    border: 1px solid rgba(230, 230, 230, 0.7); /* یک حاشیه بسیار ملایم */
+    border-radius: 30px;                       /* ۵. گرد کردن کامل گوشه‌ها */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.463);    /* سایه برای عمق دادن */
+}
+
+#mobile-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#mobile-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* ۶. کاهش پدینگ برای کوچک‌تر شدن ارتفاع پنل */
+    padding: 8px 5px; 
+    text-decoration: none;
+    color: #555; /* کمی پررنگ‌تر کردن رنگ آیکون‌ها */
+    transition: color 0.3s ease;
+}
+
+#mobile-nav a svg {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 3px;
+}
+
+#mobile-nav a span {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+#mobile-nav a:hover,
+#mobile-nav a.active {
+    color: #000000;
+}
+
+
+/* --- در مدیا کوئری، هدر اصلی را مخفی و پنل موبایل را نمایش میدهیم --- */
+
+@media (max-width: 768px) {
+    
+    /* مخفی کردن هدر اصلی دسکتاپ */
+    .main-header {
+        display: none;
+    }
+
+    /* نمایش دادن پنل ناوبری موبایل */
+    #mobile-nav {
+        display: block;
+    }
+
+    /* ... بقیه کدهای واکنشگرایی ... */
+}
+
+/* این کد را به فایل استایل خود اضافه کنید */
+h1, h2, h3 ,.btn,p ,.main-footer-section {
+    font-family: 'Lalezar', cursive;
+    /* ممکن است نیاز باشد کمی اندازه فونت را تنظیم کنید */
+    /* font-size: 50px; */ 
+    
+}
+
+
+
+/* ================================
+   Preloader Styles
+   ================================ */
+
+   #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a; /* یک پس زمینه تیره برای پوشاندن سایت */
+    z-index: 9999; /* بالاتر از همه عناصر قرار میگیرد */
+
+    /* برای وسط چین کردن انیمیشن لودر */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* برای افکت محو شدن */
+    transition: opacity 0.75s ease, visibility 0.75s ease;
+}
+
+/* کلاس برای مخفی کردن پری‌لودر */
+#preloader.hide-preloader {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* ================================
+/* ================================
+   Pure CSS "Serve" Preloader
+   ================================ */
+
+   .loader-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.paddle {
+    width: 70px;
+    height: 70px;
+    background-color: #34495e; /* رنگ آبی-خاکستری تیره */
+    border-radius: 50%;
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    
+    /* انیمیشن حرکت راکت */
+    animation: serve-paddle 2s ease-in-out infinite;
+    transform-origin: bottom center; /* نقطه چرخش راکت از دسته آن است */
+}
+
+/* دسته راکت */
+.paddle::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 30px;
+    background-color: #a0522d;
+    border-radius: 4px;
+}
+
+.ball {
+    width: 18px;
+    height: 18px;
+    background-color: #f1c40f; /* رنگ زرد روشن */
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50px;
+    left: 70px;
+
+    /* انیمیشن حرکت توپ */
+    animation: serve-ball 2s ease-in-out infinite;
+}
+
+/* تعریف مراحل انیمیشن پرتاب و ضربه خوردن توپ */
+@keyframes serve-ball {
+    0%, 10% {
+        /* شروع: توپ در پایین و کنار راکت */
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    25% {
+        /* پرتاب شدن به بالا */
+        transform: translate(25px, -100px);
+    }
+    50% {
+        /* رسیدن به نقطه اوج و لحظه برخورد */
+        transform: translate(50px, -50px);
+    }
+    51% {
+        /* بعد از ضربه، به سرعت حرکت میکند */
+        transform: translate(60px, -60px);
+    }
+    75% {
+        /* خروج از صفحه */
+        transform: translate(150px, -150px);
+        opacity: 0;
+    }
+    76%, 100% {
+        /* خارج از صفحه و آماده برای شروع مجدد */
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+/* تعریف مراحل انیمیشن حرکت راکت */
+@keyframes serve-paddle {
+    0%, 10% {
+        /* حالت اولیه */
+        transform: rotate(0deg);
+    }
+    40% {
+        /* آماده شدن برای ضربه */
+        transform: rotate(-25deg);
+    }
+    50% {
+        /* لحظه ضربه زدن با سرعت */
+        transform: rotate(40deg);
+    }
+    65%, 100% {
+        /* بازگشت به حالت اولیه */
+        transform: rotate(0deg);
+    }
+}
