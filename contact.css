@@ -392,3 +392,15 @@ span{
     
 
 }
+
+
+
+@media (max-width: 480px) {
+    .contact-card {
+        padding: 40px 25px;
+    }
+
+    .contact-title {
+        font-size: 42px;
+    }
+}
