@@ -1037,3 +1037,18 @@ h1, h2, h3 ,.btn,p ,.main-footer-section {
 }
 
 
+a, button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* ۲. تعریف استایل فوکوس سفارشی برای تمام لینک ها و دکمه ها */
+a:focus, button:focus {
+    /* حذف حلقه آبی پیش فرض */
+    outline: none;
+
+    /* اضافه کردن یک سایه زیبا و ملایم به عنوان جایگزین */
+   
+    
+    /* اختیاری: هماهنگ کردن گوشه های سایه با عنصر */
+    /* border-radius: 8px; */
+}
