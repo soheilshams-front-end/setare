@@ -154,6 +154,7 @@ body {
     background-color: #fff; /* پس زمینه سفید ساده */
 }
 
+
 .hero-section .container {
     display: flex;
     align-items: center;
@@ -604,11 +605,27 @@ body {
 
     /* --- Footer --- */
     .footer-content {
-        flex-direction: column;
-        gap: 40px;
-        /* چینش فوتر هم به راست تغییر کرد */
-        text-align: right;
+        /* flex-direction: column; این خط را حذف یا کامنت کنید */
+        flex-wrap: wrap; /* این دستور کلیدی، اجازه میدهد ستون ها به خط بعدی بروند */
+        gap: 40px 20px; /* فاصله عمودی و افقی بین ستون ها */
     }
+
+    .footer-column {
+        /* هر ستون حدود نصف عرض را اشغال میکند تا دو ستون در یک ردیف جا شوند */
+        flex-basis: calc(50% - 10px);
+        text-align: right; /* چینش متن همچنان راست-چین باقی میماند */
+    }
+    
+    .footer-column.footer-about {
+        /* ستون لوگو هم نصف عرض را میگیرد */
+        flex-basis: calc(50% - 10px);
+    }
+    
+    .footer-bottom {
+        /* برای خوانایی بهتر، متن کپی رایت را وسط چین میکنیم */
+        text-align: center;
+    }
+
 
     .about-features {
         justify-content: flex-start; /* آیتم ها از راست شروع میشوند */
@@ -708,8 +725,7 @@ main {
     margin-top: -5rem;
 }
 
-
-
+  
 
 }
 
@@ -1019,3 +1035,5 @@ h1, h2, h3 ,.btn,p ,.main-footer-section {
         transform: rotate(0deg);
     }
 }
+
+
